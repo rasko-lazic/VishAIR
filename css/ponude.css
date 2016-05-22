@@ -138,6 +138,7 @@
 .choice img {
 	display: block;
 	width: 100%;
+	min-width: 160px;
 	height: auto;
 	border: 1px solid black;
 	border-radius: 8px;
@@ -164,6 +165,7 @@
 	height: auto;
 	display: inline !important;
 	border: none !important;
+	min-width: 16px;
 }
 
 .meta span {
