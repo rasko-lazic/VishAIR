@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Raleway:300&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext);
 
 .nav-container {
 	width: 100%;
@@ -92,7 +93,7 @@
 
 .content-container h3 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 1.6em;
+	font-size: 2.5em;
 }
 
 .search-container {
@@ -133,12 +134,12 @@
 
 .choice {
 	margin-top: 30px;
+	min-width: 300px;
 }
 
 .choice img {
 	display: block;
 	width: 100%;
-	min-width: 160px;
 	height: auto;
 	border: 1px solid black;
 	border-radius: 8px;
@@ -148,6 +149,10 @@
 	margin-top: 20px;
 	font-family: 'Raleway', sans-serif;
 	font: 1em;
+	background-color: rgba(7, 99, 117, 0.5);
+	padding: 8px;
+	border-radius: 8px;
+	color: white;
 }
 
 .meta {
@@ -165,10 +170,10 @@
 	height: auto;
 	display: inline !important;
 	border: none !important;
-	min-width: 16px;
+	margin-top: 5px;
 }
 
 .meta span {
-	margin-left: 10px;
-	font-family: 'Raleway', sans-serif;
+	margin-left: 12px;
+	font-family: 'Open Sans', sans-serif;
 }
