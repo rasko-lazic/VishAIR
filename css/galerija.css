@@ -56,6 +56,7 @@
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 50px;
+	text-align: center;
 }
 
 .footer-container {
@@ -89,36 +90,20 @@
 	font-weight: 600;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-::selection{
-    background-color: transparent;
-}
-
-body {
-    background-image: url(http://subtlepatterns.com/patterns/dark_wall.png);
-    background-repeat: repeat;
-
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    margin: 30px;
-    text-shadow: 0px 0px 3px white;
+.content-container h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5em;
 }
 
 .slider {
     display: block;
-    height: 500px;
-    width: 500px;
+    height: 680px;
+    width: 1200px;
     margin: auto;
     border: 8px white solid;
-    box-shadow: 0px 0px 3px white;
+    box-shadow: 0px 0px 20px black;
     margin-top: 20px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -135,7 +120,7 @@ h1 {
 
 .slider label {
     background-color: rgba(200,200,200,1);
-    bottom: -40px;
+    bottom: -30px;
     border-radius: 50%;
     box-shadow: 0px 0px 3px rgba(0,0,0,.8);
     width: 12px;
@@ -154,30 +139,34 @@ h1 {
 }
 
 .slider li:nth-child(1) label {
-    left: 40%;
-}
-
-.slider li:nth-child(2) label {
     left: 45%;
 }
 
+.slider li:nth-child(2) label {
+    left: 47%;
+}
+
 .slider li:nth-child(3) label {
-    left: 50%;
+    left: 49%;
 }
 
 .slider li:nth-child(4) label {
-    left: 55%;
+    left: 51%;
 }
 
 .slider li:nth-child(5) label {
-    left: 60%;
+    left: 53%;
+}
+
+.slider li:nth-child(6) label {
+    left: 55%;
 }
 
 .slider img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     opacity: 0;
-    transition: .25s;
+    /*transition: .25s;*/
     vertical-align: top;
     visibility: hidden;
 }
@@ -188,3 +177,4 @@ h1 {
     z-index: 10;
     transition: 1s;
 }
+
