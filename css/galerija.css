@@ -95,16 +95,44 @@
 	font-size: 2.5em;
 }
 
+.gallery-container {
+	position: relative;
+	display: block;
+	height: 680px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.background {
+	position: absolute;
+	left: 0;
+	display: inline-block;
+    height: 680px;
+    width: 1200px;
+    margin: auto;
+    border: 8px white solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transform: rotate(1deg);
+}
+
+#bg-1 {
+	transform: rotate(1deg);
+}
+
+#bg-2 {
+	transform: rotate(-1deg);
+}
+
 .slider {
+	position: relative;
     display: block;
     height: 680px;
     width: 1200px;
     margin: auto;
     border: 8px white solid;
-    box-shadow: 0px 0px 20px black;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    position: relative;
+    box-shadow: 0px 0px 10px black;
 }
 
 .slider li {
