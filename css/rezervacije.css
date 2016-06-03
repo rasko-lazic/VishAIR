@@ -3,81 +3,93 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin-ext);
 
 .nav-container {
-  width: 100%;
-  height: 80px;
-  background: #9ad3de;
+    width: 100%;
+    height: 80px;
+    background: #9ad3de;
 }
 
 .nav-logo {
-  float: left;
-  height: 100%;
-  text-align: center;
-  width: 15%;
-  font-family: 'Poiret One', cursive;
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 15%;
+    font-family: 'Poiret One', cursive;
 }
 
 .nav-logo h1 {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 .nav-logo h1 span {
-  color: #fae596;
-  font-weight: 800;
+    color: #fae596;
+    font-weight: 800;
 }
 
 .sub-logo {
-  font-size: 1.2em;
-  font-family: 'Raleway', sans-serif;
-  display: block;
-  margin-top: 6px;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    margin-top: 6px;
 }
 
 .nav-links {
-  float: right;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.8em;
-  font-weight: 800;
-  margin-top: 1.2%;
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-top: 1.2%;
 }
 
 .nav-links a {
-  margin-right: 22px;
-  text-decoration: none;
-  color: #e3e3e3;
-  text-shadow: 1px 1px #000000;
+    margin-right: 22px;
+    text-decoration: none;
+    color: #e3e3e3;
+    text-shadow: 1px 1px #000000;
 }
 
 .nav-links a:hover {
-  color: #558D8B;
+    color: #558D8B;
 }
 
 .footer-container {
-  height: 60px;
-  text-align: center;
-  background: #9ad3de;
+    height: 60px;
+    text-align: center;
+    background: #9ad3de;
 }
 
 .footer-links {
-  padding-top: 12px;
+    padding-top: 12px;
 }
 
 .footer-links a {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
-  text-decoration: none;
-  color: #e3e3e3;
-  text-shadow: 1px 1px #000000;
-  margin-right: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #e3e3e3;
+    text-shadow: 1px 1px #000000;
+    margin-right: 5%;
 }
 
 .footer-links a:hover {
-  color: #558D8B;
+    color: #558D8B;
 }
 
 .signature {
-  margin-top: 10px;
-  background: white !important;
-  font-family: 'Poiret One', cursive;
-  font-weight: 600;
+    margin-top: 10px;
+    background: white !important;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+}
+
+.reservation {
+    width: 80%;
+}
+
+.info {
+    width: 40%;
+}
+
+.form {
+    width: 60%;
 }
