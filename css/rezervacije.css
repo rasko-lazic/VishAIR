@@ -2,6 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300&subset=latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin-ext);
 
+body {
+    background: #dddfd4;
+}
+
 .nav-container {
     width: 100%;
     height: 80px;
@@ -13,7 +17,53 @@
     height: 100%;
     text-align: center;
     width: 15%;
+    min-width: 102px;
     font-family: 'Poiret One', cursive;
+}
+
+.narrow-nav {
+    display: none;
+    float: right;
+    position: relative;
+}
+
+.narrow-nav img {
+    padding-top: 9px;
+    padding-right: 9px;
+    cursor: pointer;
+}
+
+.narrow-nav:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -140px;
+    min-width: 170px;
+    z-index: 100;
+}
+
+.dropdown-content ul {
+    text-align: right;
+}
+
+.dropdown-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid rgba(0, 0, 0, .4);
+    font-weight: 500;
+    padding: 10px;
+}
+
+.dropdown-link:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #c5a981;
 }
 
 .nav-logo h1 {
@@ -87,11 +137,6 @@
     margin: auto;
 }
 
-.form {
-    width: 100%;
-    margin: auto;
-}
-
 .controls {
     text-align: center;
     position: relative;
@@ -123,11 +168,13 @@
 }
 
 .form {
+    width: 100%;
     background: rgba(0, 0, 0, .4);
     padding: 30px 0;
     border: 2px solid #9ad3de;
     border-radius: 5px;
-    margin: 40px 0;
+    margin-top: 10px;
+    margin-bottom: 50px; 
     text-align: center;
 }
 
@@ -162,3 +209,83 @@
 .form button:hover {
     background: rgba(0, 0, 0, .4);
 }
+
+.info {
+    width: 100%;
+    padding: 50px;
+}
+
+.info img {
+    margin: 0 20px 30px 0;
+    border: 10px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    width: 45%;
+    min-width: 490px;
+}
+
+.info h2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+.info p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    padding: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) { 
+    html {
+        font-size: 60%;
+    }
+
+    .nav-container {
+        height: 50px;
+    }
+
+    .standard-nav {
+        display: none;
+    }
+
+    .narrow-nav {
+        display: inline;
+    }
+
+    .info {
+        padding: 0;
+        padding-top: 40px;
+    }
+ }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    html {
+        font-size: 60%;
+    }
+
+    .nav-container {
+        height: 50px;
+    }
+
+    .info {
+        padding: 0;
+        padding-top: 40px;
+    }
+ }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+    html {
+        font-size: 80%;
+    }
+
+    .nav-container {
+        height: 60px;
+    }
+ }

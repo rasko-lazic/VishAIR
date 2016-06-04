@@ -17,7 +17,53 @@ body {
 	height: 100%;
 	text-align: center;
 	width: 15%;
+	min-width: 102px;
 	font-family: 'Poiret One', cursive;
+}
+
+.narrow-nav {
+	display: none;
+	float: right;
+	position: relative;
+}
+
+.narrow-nav img {
+	padding-top: 9px;
+	padding-right: 9px;
+	cursor: pointer;
+}
+
+.narrow-nav:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    left: -140px;
+    min-width: 170px;
+    z-index: 100;
+}
+
+.dropdown-content ul {
+	text-align: right;
+}
+
+.dropdown-link {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgba(0, 0, 0, .8);
+	border: 1px solid rgba(0, 0, 0, .4);
+	font-weight: 500;
+	padding: 10px;
+}
+
+.dropdown-link:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #c5a981;
 }
 
 .nav-logo h1 {
@@ -171,3 +217,41 @@ body {
 .form button:hover {
 	background: rgba(0, 0, 0, .4);
 }
+
+@media screen and (max-width: 767px) { 
+	html {
+		font-size: 60%;
+	}
+
+	.nav-container {
+		height: 50px;
+	}
+
+	.standard-nav {
+		display: none;
+	}
+
+	.narrow-nav {
+		display: inline;
+	}
+ }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+	html {
+		font-size: 60%;
+	}
+
+	.nav-container {
+		height: 50px;
+	}
+ }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+	html {
+		font-size: 80%;
+	}
+
+	.nav-container {
+		height: 60px;
+	}
+ }

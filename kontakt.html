@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/helpers.css">
 	<link rel="stylesheet" type="text/css" href="css/kontakt.css">
+	<link rel="icon" type="image/png" href="img/logo.png" alt="Turistička agencija VishAir logo">
 </head>
 <body>
 	<header class="nav-container">
@@ -13,17 +14,29 @@
 			<h1>Vish<span>AIR</span></h1>
 			<span class="sub-logo">Turistička agencija</span>
 		</div>
-		<div class="nav-links">
-			<a href="#">Početna</a>
-			<a href="#">Ponuda</a>
-			<a href="#">Galerija</a>
-			<a href="#">Rezervacije</a>
-			<a href="#">Kontakt</a>
-		</div>
+		<div class="narrow-nav">
+            <img src="fonts/icons/menu-icon.png" class="dropdown-button">
+            <div class="dropdown-content">
+                <a class="dropdown-link" href="index.html">Početna</a>
+                <a class="dropdown-link" href="ponude.html">Ponuda</a>
+                <a class="dropdown-link" href="galerija.html">Galerija</a>
+                <a class="dropdown-link" href="rezervacije.html">Rezervacije</a>
+                <a class="dropdown-link" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <div class="standard-nav">
+			<div class="nav-links">
+	            <a href="index.html">Početna</a>
+	            <a href="ponude.html">Ponuda</a>
+	            <a href="galerija.html">Galerija</a>
+	            <a href="rezervacije.html">Rezervacije</a>
+	            <a href="kontakt.html">Kontakt</a>
+	        </div>
+	    </div>
 	</header>
 	<section class="contact">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.701361728666!2d20.479478916115184!3d44.76650491032216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70feac3a603d%3A0x731e06924a54f0f5!2sVojvode+Stepe+283%2C+Beograd!5e0!3m2!1sen!2srs!4v1464964130285" class="contact-map"></iframe>
-			<h4>Ovo je mesto za vasa pitanja i sugestije</h4>
+			<h4>Ovo je mesto za vaša pitanja i sugestije</h4>
 	     	<div class="form">
                 <div class="controls">
                     <input type="text" class="input-field" name="name">
@@ -37,7 +50,7 @@
                     <textarea name="comments" class="input-field" id="message"></textarea>
                     <label for="message">Poruka</label>
                 </div>
-                <button type="submit" value="Submit">Posalji</button>
+                <button type="submit" value="Submit">Pošalji</button>
             </div>
             <div class="contact-info">
                 <h2>Adresa</h2>
@@ -62,11 +75,11 @@
 
 	<footer class="footer-container">
 		<div class="footer-links">
-			<a href="#">Početna</a>
-			<a href="#">Ponuda</a>
-			<a href="#">Galerija</a>
-			<a href="#">Rezervacije</a>
-			<a href="#">Kontakt</a>
+			<a href="index.html">Početna</a>
+			<a href="ponude.html">Ponuda</a>
+			<a href="galerija.html">Galerija</a>
+			<a href="rezervacije.html">Rezervacije</a>
+			<a href="kontakt.html">Kontakt</a>
 		</div>
 		<div class="signature">
 			<p>Copyright by Raško Lazić &copy 2015</p>
